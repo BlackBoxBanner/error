@@ -1,7 +1,7 @@
 /**
  * Represents the structure of a custom error.
  */
-type ErrorType = {
+export type ErrorType = {
   id?: string;
   message: string;
 };
