@@ -1,6 +1,6 @@
 {
   "name": "@dookdiks/error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DookDiks - Error is a TypeScript library that provides utilities for working with custom errors, error parsing, and debugging. It is designed to simplify error handling and enhance debugging capabilities in TypeScript projects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackBoxBanner/error"
+    "url": "https://github.com/DookDiks/error"
   },
   "keywords": [
     "error",

@@ -65,7 +65,7 @@ DookDiks - Error is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For issues, questions, or suggestions, please create an issue on the [GitHub repository](https://github.com/yourusername/dookdiks-error).
+For issues, questions, or suggestions, please create an issue on the [GitHub repository](https://github.com/DookDiks/error/issues).
 
 ---
 
