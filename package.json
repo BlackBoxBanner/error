@@ -1,20 +1,23 @@
 {
-  "name": "@dookdiks/template",
+  "name": "@dookdiks/error",
   "version": "1.0.0",
-  "description": "dookdiks npm package template",
+  "description": "DookDiks - Error is a TypeScript library that provides utilities for working with custom errors, error parsing, and debugging. It is designed to simplify error handling and enhance debugging capabilities in TypeScript projects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "release": "npm publish --access=public || echo 'version already published'",
+    "build": "tsc",
+    "release": "npm run build && npm publish --access=public || echo 'version already published'",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/BlackBoxBanner/error"
   },
   "keywords": [
-    "template"
+    "error",
+    "custom error",
+    "error handler"
   ],
   "author": "dookdiks",
   "license": "MIT",
