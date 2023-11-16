@@ -4,6 +4,15 @@
 
 DookDiks - Error is a TypeScript library that provides utilities for working with custom errors, error parsing, and debugging. It is designed to simplify error handling and enhance debugging capabilities in TypeScript projects.
 
+## Wallaby.js
+
+[![Wallaby.js](https://img.shields.io/badge/wallaby.js-powered-blue.svg?style=for-the-badge&logo=github)](https://wallabyjs.com/oss/)
+
+This repository contributors are welcome to use
+[Wallaby.js OSS License](https://wallabyjs.com/oss/) to get
+test results immediately as you type, and see the results in
+your editor right next to your code.
+
 ## Features
 
 - **Custom Error Construction**: Easily create custom errors with customizable properties such as ID and message.
