@@ -17,6 +17,11 @@ type ErrorConstruct = (props: ErrorType) => Error;
 type ErrorParser = (error: Error) => ErrorType;
 
 /**
+ * Represents a function that logs a message to the console for debugging purposes.
+ */
+type TryCatch = <T, G>(fn: () => T, errFn: (error: unknown) => G) => T | G;
+
+/**
  * Constructs a custom error with optional properties.
  * @param {ErrorType} { id, message } - The properties of the error.
  * @returns {Error} - The constructed custom error.
@@ -50,3 +55,17 @@ export const errorParser: ErrorParser = (error: Error) => {
 export const customDebug = (log: string, status: boolean = false) => {
   status && console.debug(log);
 };
+
+/**
+ * Tries to execute a function and returns its result, or executes an error function and returns its result.
+ * @param {() => T} fn - The function to execute.
+ * @param {(error: unknown) => G} errFn - The error function to execute.
+ * @returns {T | G} - The result of the executed function or error function.
+ */
+export const tryCatch: TryCatch = (fn, errFn) => {
+  try {
+    return fn();
+  } catch (err: unknown) {
+    return errFn(err);
+  }
+}
